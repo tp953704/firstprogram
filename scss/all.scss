@@ -1,0 +1,10 @@
+@import "import/_var.scss";
+@import "import/_text.scss";
+@import "mixin/_mixins.scss";
+@import "import/_reset.scss"; 
+@import "./import/_icon.scss";
+@import "./import/_nagation.scss";
+@import "./import/_slidebar.scss";
+.displayNone{
+    display: none;
+}

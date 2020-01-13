@@ -1,0 +1,115 @@
+.title-text {
+  line-height: 2vw;
+  font-size: 2vw;
+}
+
+.sm-title-text {
+  font-size: 1.3vw;
+}
+
+.bg-text {
+  font-size: 3vw;
+}
+
+.container {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.container .Tbox {
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .Tbox .cube {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.container .Tbox .cube .side {
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+}
+
+.container .Tbox .cube .font {
+  background-color: #121261;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 10vw);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 10vw);
+}
+
+.container .Tbox .cube .left {
+  background-color: #094b12;
+  -webkit-transform: rotate3d(0, 1, 0, 90deg) translate3d(0vh, 0, 10vw);
+          transform: rotate3d(0, 1, 0, 90deg) translate3d(0vh, 0, 10vw);
+}
+
+.container .Tbox .cube .right {
+  background-color: #dd710b;
+  -webkit-transform: rotate3d(0, 1, 0, -90deg) translate3d(0vh, 0, 10vw);
+          transform: rotate3d(0, 1, 0, -90deg) translate3d(0vh, 0, 10vw);
+}
+
+.container .Tbox .cube .top {
+  background-color: #0bacdd;
+  -webkit-transform: rotate3d(1, 0, 0, 90deg) translate3d(0vh, 0vh, 10vw);
+          transform: rotate3d(1, 0, 0, 90deg) translate3d(0vh, 0vh, 10vw);
+}
+
+.container .Tbox .cube .bottom {
+  background-color: #dd0b86;
+  -webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0vh, 0vh, 10vw);
+          transform: rotate3d(1, 0, 0, -90deg) translate3d(0vh, 0vh, 10vw);
+}
+
+.container .Tbox .cube .back {
+  background-color: #f10909;
+  -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, -10vw);
+          transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, -10vw);
+}
+
+.footer {
+  display: block;
+  position: fixed;
+  top: 92vh;
+  height: 8vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, right top, from(#57516e), to(#130e0e));
+  background: linear-gradient(to right, #57516e 0%, #130e0e 100%);
+}
+
+.footer .footer_text {
+  position: absolute;
+  left: 40vw;
+  color: white;
+  line-height: 8vh;
+}
+
+.magicpen {
+  position: fixed;
+  z-index: 1003;
+  background: wheat;
+  border-radius: 50px;
+  mix-blend-mode: difference;
+  top: 200px;
+  left: 200px;
+  height: 50px;
+  width: 50px;
+}
+/*# sourceMappingURL=only-index.css.map */

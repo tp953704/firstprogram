@@ -1,0 +1,129 @@
+.container{   
+    display: block; 
+    width: 100vw;
+    height: 100vh;
+    transform-origin:center;
+    .Tbox{
+        position: relative;
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        transform-style: preserve-3d;
+        // perspective-origin:center center;
+        .cube{
+            transform-style: preserve-3d;
+            // animation-name:  leftx;
+            // animation-duration: 3s;
+            // animation-delay: 0.5s;
+            // animation-iteration-count: 1.1;
+            position: absolute;
+            top: 40vh;
+            left: 40vw;
+            
+            transform: rotateY(0deg);
+            // transform: matrix3d(1, 0, 0, 0, 0, 1, -2.44929e-16, 0, 0, 2.44929e-16, 1, 0, 0, 0, 0, 1) perspective(1000px) rotateX(0deg) rotateY(0deg);
+            // .origin{
+            //     position: absolute;
+            //     top: 50vh;
+            //     left: 50vh;
+            //     // transform-origin: 20vh 50vh 0;
+            // }
+            .side{
+                display: inline-block;
+                width: 20vw;
+                height: 20vw;
+                position: absolute;
+                top: -10vw;
+                left: -10vw;
+                // transform-origin:center;
+            }
+            .font{
+                
+                background-color: rgb(18, 18, 97);
+                // opacity: 0.5;
+                // animation-name: T;
+                // animation-duration: 3s;
+                // animation-delay: 0.5s;
+                // animation-iteration-count: infinite;
+                transform:rotate3d(0,0,0,0) translate3d(0,0,10vw);
+            }
+            .left{
+                
+                background-color: rgb(9, 75, 18);
+                // opacity: 0.5;
+            //     // animation-name: T;
+            //     // animation-duration: 3s;
+            //     // animation-delay: 0.5s;
+            //     // animation-iteration-count: infinite;
+                transform:rotate3d(0,1,0,90deg) translate3d(0vh,0,10vw);
+            }
+            .right{
+                background-color: rgb(221, 113, 11);
+                // opacity: 0.5;
+            //     // animation-name: T;
+            //     // animation-duration: 3s;
+            //     // animation-delay: 0.5s;
+            //     // animation-iteration-count: infinite;
+                transform: rotate3d(0,1,0,-90deg) translate3d(0vh,0,10vw);
+            }
+            .top{
+                background-color: rgb(11, 172, 221);
+                // opacity: 0.5;
+                // animation-name: T;
+                // animation-duration: 3s;
+                // animation-delay: 0.5s;
+                // animation-iteration-count: infinite;
+                transform: rotate3d(1,0,0,90deg) translate3d(0vh,0vh,10vw);
+            }
+            .bottom{
+                background-color: rgb(221, 11, 134);
+                // opacity: 0.5;
+                // animation-name: T;
+                // animation-duration: 3s;
+                // animation-delay: 0.5s;
+                // animation-iteration-count: infinite;
+                transform: rotate3d(1,0,0,-90deg) translate3d(0vh,0vh,10vw);
+            }
+            .back{
+
+                background-color: rgb(241, 9, 9);
+                // opacity: 0.5;
+                // animation-name: T;
+                // animation-duration: 3s;
+                // animation-delay: 0.5s;
+                // animation-iteration-count: infinite;
+                transform: rotate3d(0,0,0,0deg) translate3d(0,0,-10vw);
+            }
+        }
+    }
+}
+
+// @keyframes left{
+//     0%{
+//         transform: rotateY(0deg);
+//     }33%{
+//         transform: rotateY(0deg);
+//     }50%{
+//         transform: rotate3d(0,1,0,-90deg);
+//     }
+// }
+// @keyframes right{
+//     from{
+//         transform: rotateY(0deg);
+//     }to{
+//         transform: rotate3d(0,1,0,90deg);
+//     }
+// }
+// @keyframes top{
+//     from{
+//         transform: rotateX(0deg);
+//     }to{
+//         transform: rotate3d(1,0,0,-90deg);
+//     }
+// }
+// @keyframes down{
+//     0%{
+//         transform: rotateX(0deg);
+//     }100%{
+//         transform: rotate3d(1,0,0,90deg);
+//     }
+// }
